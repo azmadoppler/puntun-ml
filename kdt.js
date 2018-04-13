@@ -1,4 +1,4 @@
-var kdt = require('./kdt')
+var kdt = require('kdt')
 
 var coords = [
   { name: 'Gramercy Theatre',
