@@ -1,0 +1,109 @@
+//max DTW
+[ { name: 'ツナガルオモイ', distance: 4829 },
+  { name: 'MEMORIA', distance: 5204 },
+  { name: 'INNOCENCE', distance: 5285 },
+  { name: 'シリウス', distance: 5688 },
+  { name: 'シンシアの光', distance: 5891 },
+  { name: 'コバルト・スカイ', distance: 5941 },
+  { name: 'アクセンティア', distance: 5962 },
+  { name: 'Bright Future', distance: 6005 },
+  { name: 'AURORA', distance: 6022 },
+  { name: 'ラピスラズリ', distance: 6140 },
+  { name: '翼', distance: 6149 },
+  { name: 'サンビカ', distance: 6197 },
+  { name: 'HaNaZaKaRi', distance: 6317 },
+  { name: 'GENESIS', distance: 6423 },
+  { name: 'IGNITE', distance: 6464 },
+  { name: '春～spring～', distance: 6688 },
+  { name: 'シューゲイザー', distance: 6919 },
+  { name: 'Lament', distance: 7512 },
+  { name: 'frozen eyez', distance: 7917 },
+  { name: 'アヴァロン・ブルー', distance: 8247 },
+  { name: 'KASUMI', distance: 8525 },
+  { name: 'レイニーデイ', distance: 8943 },
+  { name: '虹の音', distance: 9962 },
+  { name: 'クロイウタ', distance: 10608 },
+  { name: 'GLORIA', distance: 12271 } ]
+  
+//min DTW
+  [ { name: 'ツナガルオモイ', distance: 4851 },
+  { name: 'INNOCENCE', distance: 5028 },
+  { name: 'MEMORIA', distance: 5296 },
+  { name: 'シリウス', distance: 5397 },
+  { name: 'Bright Future', distance: 5541 },
+  { name: 'コバルト・スカイ', distance: 5788 },
+  { name: 'シンシアの光', distance: 5813 },
+  { name: 'AURORA', distance: 5894 },
+  { name: 'IGNITE', distance: 6202 },
+  { name: '翼', distance: 6240 },
+  { name: 'ラピスラズリ', distance: 6352 },
+  { name: 'アクセンティア', distance: 6388 },
+  { name: '春～spring～', distance: 6460 },
+  { name: 'GENESIS', distance: 6469 },
+  { name: 'HaNaZaKaRi', distance: 6601 },
+  { name: 'サンビカ', distance: 6608 },
+  { name: 'Lament', distance: 7191 },
+  { name: 'シューゲイザー', distance: 7429 },
+  { name: 'レイニーデイ', distance: 7848 },
+  { name: 'アヴァロン・ブルー', distance: 8461 },
+  { name: 'KASUMI', distance: 8505 },
+  { name: 'frozen eyez', distance: 8588 },
+  { name: '虹の音', distance: 10174 },
+  { name: 'クロイウタ', distance: 10191 },
+  { name: 'GLORIA', distance: 12011 } ]
+  
+  
+  //average DTW
+  [ { name: 'ツナガルオモイ', distance: 1593.5 },
+  { name: 'INNOCENCE', distance: 1621.5 },
+  { name: 'Bright Future', distance: 1737 },
+  { name: 'シリウス', distance: 1787 },
+  { name: 'GENESIS', distance: 1820.5 },
+  { name: 'ラピスラズリ', distance: 1941.5 },
+  { name: 'アクセンティア', distance: 1941.5 },
+  { name: '翼', distance: 1988.5 },
+  { name: 'MEMORIA', distance: 2011 },
+  { name: 'サンビカ', distance: 2023.5 },
+  { name: 'シンシアの光', distance: 2025 },
+  { name: 'コバルト・スカイ', distance: 2033.5 },
+  { name: 'IGNITE', distance: 2040.5 },
+  { name: 'AURORA', distance: 2044 },
+  { name: 'KASUMI', distance: 2052 },
+  { name: 'クロイウタ', distance: 2094 },
+  { name: '春～spring～', distance: 2161 },
+  { name: 'HaNaZaKaRi', distance: 2193.5 },
+  { name: 'frozen eyez', distance: 2376 },
+  { name: '虹の音', distance: 2405.5 },
+  { name: 'Lament', distance: 2456.5 },
+  { name: 'レイニーデイ', distance: 2532.5 },
+  { name: 'シューゲイザー', distance: 2555.5 },
+  { name: 'GLORIA', distance: 3015.5 },
+  { name: 'アヴァロン・ブルー', distance: 3102.5 } ]
+  
+  
+ //average KDT
+ ツナガルオモイ
+INNOCENCE
+Bright Future
+シリウス
+GENESIS
+翼
+アクセンティア
+ラピスラズリ
+クロイウタ
+サンビカ
+MEMORIA
+春～spring～
+IGNITE
+コバルト・スカイ
+AURORA
+シンシアの光
+KASUMI
+HaNaZaKaRi
+frozen eyez
+Lament
+虹の音
+シューゲイザー
+レイニーデイ
+GLORIA
+アヴァロン・ブルー
