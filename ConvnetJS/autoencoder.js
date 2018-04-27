@@ -1,5 +1,5 @@
 var convnetjs = require('convnetjs')
-var data = require('../training_song.json')
+var data = require('../16ksongs.json')
 var fs = require('fs');
 
 let train_set = [];
@@ -36,11 +36,11 @@ data.forEach(element => {
 
 layer_defs = [];
 layer_defs.push({type:'input', out_sx:1024, out_sy:1, out_depth:1});
-layer_defs.push({type:'fc', num_neurons:128, activation:'sigmoid'});
+layer_defs.push({type:'fc', num_neurons:256, activation:'sigmoid'});
 layer_defs.push({type:'fc', num_neurons:128, activation:'sigmoid'});
 layer_defs.push({type:'fc', num_neurons:8});
 layer_defs.push({type:'fc', num_neurons:128, activation:'sigmoid'});
-layer_defs.push({type:'fc', num_neurons:128, activation:'sigmoid'});
+layer_defs.push({type:'fc', num_neurons:256, activation:'sigmoid'});
 layer_defs.push({type:'regression', num_neurons:1024});
 
 net = new convnetjs.Net();
@@ -49,9 +49,9 @@ net.makeLayers(layer_defs);
 
 console.log(train_set[0].w.length)
 
-var trainer = new convnetjs.Trainer(net, {learning_rate:1, method:'adadelta', batch_size:10, l2_decay:0.001});
+// var trainer = new convnetjs.Trainer(net, {learning_rate:1, method:'adadelta', batch_size:10, l2_decay:0.001});
 // var trainer = new convnetjs.SGDTrainer(net, {learning_rate:1, method:'adadelta', batch_size:10, l2_decay:0.001, l1_decay:0.001});
-// var trainer = new convnetjs.Trainer(net, {method: 'adadelta', l2_decay: 0.001,batch_size: 10});
+var trainer = new convnetjs.Trainer(net, {method: 'adadelta', l2_decay: 0.001,batch_size: 10});
 // trainer = new convnetjs.SGDTrainer(net, {method:'adadelta', batch_size:10, l2_decay:0.001});
 
 let prob = net.forward(train_set[0])
@@ -64,7 +64,6 @@ var normalArray = [].slice.call(train_set[0].w);
 // var str = JSON.stringify(json);
 // fs.writeFile('autoencoder_model.txt',JSON.stringify(str),function(err){ if(err) throw err; })
 for(let i = 0 ; i < train_set.length ; i++){
-    console.log(train_set.length)
     var normalArray = [].slice.call(prob.w);
     
     
@@ -74,12 +73,16 @@ for(let i = 0 ; i < train_set.length ; i++){
     }
     let stat = trainer.train(train_set[i] , temp_vol)
     // break
-    if( i %  1000 == 0 ){
+    
+        
+    
+    if(i%1000 == 0){
         console.log("Save file at step #" + i)
+        console.log(stat)
         var json = net.toJSON();
         var str = JSON.stringify(json);
         fs.writeFile('autoencoder_model.json',JSON.stringify(str),function(err){ if(err) throw err; })
-        // break
+        break
     }
     // break;
 }

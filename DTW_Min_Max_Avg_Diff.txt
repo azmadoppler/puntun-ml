@@ -107,3 +107,87 @@ Lament
 レイニーデイ
 GLORIA
 アヴァロン・ブルー
+
+
+//DEEP+DTW
+[ { name: 'INNOCENCE', distance: 3.8348698725081527 },
+  { name: 'ラピスラズリ', distance: 4.318979187725032 },
+  { name: 'IGNITE', distance: 4.614730894409594 },
+  { name: 'Bright Future', distance: 4.875006805393869 },
+  { name: 'クロイウタ', distance: 5.572530563496934 },
+  { name: 'KASUMI', distance: 5.834922279444073 },
+  { name: 'GENESIS', distance: 5.94802450163743 },
+  { name: 'AURORA', distance: 6.0231865133664435 },
+  { name: 'MEMORIA', distance: 6.124383295569592 },
+  { name: 'コバルト・スカイ', distance: 6.4996655337464615 },
+  { name: 'アヴァロン・ブルー', distance: 6.51127168949208 },
+  { name: '翼', distance: 6.5279670471321785 },
+  { name: 'frozen eyez', distance: 6.770516166691014 },
+  { name: 'レイニーデイ', distance: 7.021625883785714 },
+  { name: 'ツナガルオモイ', distance: 7.0894480350598 },
+  { name: 'シリウス', distance: 7.259860383046568 },
+  { name: 'シンシアの光', distance: 7.269083652527978 },
+  { name: 'アクセンティア', distance: 7.320274091218979 },
+  { name: 'シューゲイザー', distance: 8.065059523426548 },
+  { name: 'HaNaZaKaRi', distance: 8.222071314999699 },
+  { name: 'GLORIA', distance: 8.255539256651408 },
+  { name: 'Lament', distance: 9.264054338096697 },
+  { name: '春～spring～', distance: 9.453189874518744 },
+  { name: '虹の音', distance: 10.590410533496097 },
+  { name: 'サンビカ', distance: 11.980407401308675 } ]
+
+
+//Series DEEP +DTW 
+INNOCENCE
+Bright Future
+KASUMI
+シューゲイザー
+GENESIS
+アクセンティア
+シリウス
+シンシアの光
+HaNaZaKaRi
+春～spring～
+frozen eyez
+クロイウタ
+アヴァロン・ブルー
+GLORIA
+レイニーデイ
+ラピスラズリ
+MEMORIA
+翼
+ツナガルオモイ
+AURORA
+IGNITE
+Lament
+虹の音
+コバルト・スカイ
+サンビカ
+
+
+//Series DTW (Longest 9s)
+ツナガルオモイ
+INNOCENCE
+Bright Future
+シリウス
+GENESIS
+ラピスラズリ
+翼
+アクセンティア
+コバルト・スカイ
+IGNITE
+MEMORIA
+AURORA
+サンビカ
+シンシアの光
+クロイウタ
+春～spring～
+HaNaZaKaRi
+KASUMI
+frozen eyez
+Lament
+シューゲイザー
+虹の音
+レイニーデイ
+GLORIA
+アヴァロン・ブルー
